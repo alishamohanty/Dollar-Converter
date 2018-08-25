@@ -23,29 +23,6 @@
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/currency" />
 
-    <EditText
-        android:id="@+id/dollars2"
-        style="@style/Widget.AppCompat.EditText"
-        android:layout_width="wrap_content"
-        android:layout_height="38dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:autoText="true"
-        android:editable="false"
-        android:ems="10"
-        android:hint="$ Rupees"
-        android:inputType="textPersonName"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:textColor="#895dcc"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.601" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="234dp"
@@ -100,6 +77,28 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.199" />
+        app:layout_constraintVertical_bias="0.196" />
+
+    <TextView
+        android:id="@+id/rupees"
+        android:layout_width="163dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:paddingBottom="1dp"
+        android:paddingEnd="1dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingStart="1dp"
+        android:paddingTop="3dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.302" />
 
 </android.support.constraint.ConstraintLayout>

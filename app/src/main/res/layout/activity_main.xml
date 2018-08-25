@@ -24,28 +24,6 @@
         app:srcCompat="@drawable/currency" />
 
     <EditText
-        android:id="@+id/dollars"
-        style="@style/Widget.AppCompat.EditText"
-        android:layout_width="wrap_content"
-        android:layout_height="38dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:autoText="true"
-        android:ems="10"
-        android:hint="$ Dollars"
-        android:inputType="textPersonName"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:textColor="#895dcc"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.336" />
-
-    <EditText
         android:id="@+id/dollars2"
         style="@style/Widget.AppCompat.EditText"
         android:layout_width="wrap_content"
@@ -55,18 +33,18 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:autoText="true"
+        android:editable="false"
         android:ems="10"
         android:hint="$ Rupees"
         android:inputType="textPersonName"
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
         android:textColor="#895dcc"
-        android:editable="false"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.493" />
+        app:layout_constraintVertical_bias="0.601" />
 
     <TextView
         android:id="@+id/textView2"
@@ -90,7 +68,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="#2b4899"
         android:fontFamily="@font/allerta"
         android:onClick="convert"
@@ -98,8 +78,28 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/dollars"
-        app:layout_constraintVertical_bias="0.623"
-        tools:layout_editor_absoluteX="136dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.878" />
+
+    <EditText
+        android:id="@+id/dollars"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="@font/allerta"
+        android:hint="Enter in Dollars"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
 
 </android.support.constraint.ConstraintLayout>
